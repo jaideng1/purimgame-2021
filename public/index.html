@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="html-presents.js"></script>
+  </head>
+  <style>
+  #canvasHolder {
+    outline: 2px dotted black;
+  }
+  #inventoryHolder {
+    outline: 2px dotted black;
+  }
+  .slot {
+    outline: 2px dotted black;
+    width: 40px;
+    height: 40px;
+    display: inline;
+  }
+  </style>
+  <body id="body">
+    <br/>
+    <br/>
+    <noscript>You need JavaScript enabled!</noscript>
+    <center>
+      <div class="container">
+        <div class="row">
+          <div class="col" id="canvasHolder">
+            <!--Canvas is inserted in script.js-->
+          </div>
+          <div class="col-5" id="inventoryHolder">
+
+
+          </div>
+        </div>
+      </div>
+    </center>
+    <br/>
+    <center>
+      <div id="p-stats">
+        <h4 id="health"></h4>
+        <h4 id="attack-cooldown"></h4>
+        <h4 id="other-info"></h4>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </center>
+    <footer class="text-muted py-5" style="background-color: #e3e3e3;">
+      <br/>
+      <br/>
+      <center class="container">
+        <p class="mb-1">
+          Created by Jaiden G and Lachlan F.
+        </p>
+      </center>
+      <br/>
+      <br/>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
